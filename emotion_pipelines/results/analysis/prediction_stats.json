@@ -1,0 +1,19 @@
+{
+  "total_files": 51,
+  "emotion_distribution": {
+    "fearful": 21,
+    "angry": 14,
+    "happy": 12,
+    "sad": 3,
+    "disgust": 1
+  },
+  "avg_confidence_per_emotion": {
+    "angry": 0.495,
+    "disgust": 0.26649999999999996,
+    "fearful": 0.32643020221787344,
+    "happy": 0.3041705974842767,
+    "sad": 0.2833333333333333
+  },
+  "overall_avg_confidence": 0.36375649836052276,
+  "overall_std_confidence": 0.11246628465240523
+}

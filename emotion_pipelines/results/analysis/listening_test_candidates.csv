@@ -1,0 +1,4 @@
+filename,file_path,predicted_emotion,confidence,top2_emotion,top2_confidence,confidence_gap
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Mixed_Voice_and_Falsetto\Style\Control_Group\0005.wav,angry,0.655,fearful,0.215,0.44000000000000006
+0004.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Mixed_Voice_and_Falsetto\Dark Paradise\Control_Group\0004.wav,angry,0.645,fearful,0.16,0.485
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\Vibrato\All of Me\Vibrato_Group\0005.wav,angry,0.62,fearful,0.245,0.375

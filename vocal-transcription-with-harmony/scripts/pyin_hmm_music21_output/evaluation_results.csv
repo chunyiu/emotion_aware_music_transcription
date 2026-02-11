@@ -1,0 +1,51 @@
+file,musicxml_output,precision,recall,f_measure,ref_count,pred_count
+EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0006.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0006.musicxml,0.2,0.2857142857142857,0.23529411764705882,14,20
+EN-Tenor-1/Vibrato/I Knew You Were Trouble/Vibrato_Group/0001.wav,EN-Tenor-1/Vibrato/I Knew You Were Trouble/Vibrato_Group/0001.musicxml,0.23076923076923078,0.3,0.2608695652173913,10,13
+EN-Tenor-1/Glissando/Stay/Glissando_Group/0003.wav,EN-Tenor-1/Glissando/Stay/Glissando_Group/0003.musicxml,0.5,0.5384615384615384,0.5185185185185186,13,14
+EN-Tenor-1/Vibrato/Always Remember Us This Way/Vibrato_Group/0001.wav,EN-Tenor-1/Vibrato/Always Remember Us This Way/Vibrato_Group/0001.musicxml,0.5454545454545454,0.5,0.5217391304347826,12,11
+EN-Tenor-1/Glissando/Million Reasons/Glissando_Group/0003.wav,EN-Tenor-1/Glissando/Million Reasons/Glissando_Group/0003.musicxml,0.1,0.08695652173913043,0.09302325581395349,23,20
+EN-Tenor-1/Vibrato/Shallow/Vibrato_Group/0002.wav,EN-Tenor-1/Vibrato/Shallow/Vibrato_Group/0002.musicxml,0.2,0.25,0.22222222222222224,12,15
+EN-Alto-2/Breathy/My Love/Control_Group/0002.wav,EN-Alto-2/Breathy/My Love/Control_Group/0002.musicxml,0.18181818181818182,0.13333333333333333,0.15384615384615383,15,11
+EN-Alto-2/Pharyngeal/My Heart Will Go On/Pharyngeal_Group/0006.wav,EN-Alto-2/Pharyngeal/My Heart Will Go On/Pharyngeal_Group/0006.musicxml,0.7647058823529411,0.6842105263157895,0.7222222222222222,19,17
+EN-Alto-1/Pharyngeal/beauty and the beast/Control_Group/0000.wav,EN-Alto-1/Pharyngeal/beauty and the beast/Control_Group/0000.musicxml,0.0,0.0,0.0,5,5
+EN-Tenor-1/Vibrato/Unconditionally/Control_Group/0000.wav,EN-Tenor-1/Vibrato/Unconditionally/Control_Group/0000.musicxml,0.3333333333333333,0.375,0.35294117647058826,8,9
+EN-Tenor-1/Breathy/All I Ask/Breathy_Group/0006.wav,EN-Tenor-1/Breathy/All I Ask/Breathy_Group/0006.musicxml,0.4166666666666667,0.38461538461538464,0.4,13,12
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Love Story/Falsetto_Group/0006.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Love Story/Falsetto_Group/0006.musicxml,0.24390243902439024,0.21739130434782608,0.22988505747126436,46,41
+EN-Alto-1/Vibrato/my heart will go on/Control_Group/0004.wav,EN-Alto-1/Vibrato/my heart will go on/Control_Group/0004.musicxml,0.6,0.6,0.6,5,5
+EN-Alto-2/Glissando/My Heart Will Go On/Control_Group/0004.wav,EN-Alto-2/Glissando/My Heart Will Go On/Control_Group/0004.musicxml,0.5294117647058824,0.5,0.5142857142857143,18,17
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Shallow/Falsetto_Group/0003.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Shallow/Falsetto_Group/0003.musicxml,0.2222222222222222,0.2,0.2105263157894737,10,9
+EN-Alto-2/Mixed_Voice_and_Falsetto/Easy On Me/Control_Group/0006.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Easy On Me/Control_Group/0006.musicxml,0.15384615384615385,0.11764705882352941,0.13333333333333333,17,13
+EN-Alto-1/Breathy/who says/Control_Group/0001.wav,EN-Alto-1/Breathy/who says/Control_Group/0001.musicxml,0.44,0.4074074074074074,0.4230769230769231,27,25
+EN-Tenor-1/Mixed_Voice_and_Falsetto/I Knew You Were Trouble/Control_Group/0007.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/I Knew You Were Trouble/Control_Group/0007.musicxml,0.1111111111111111,0.09090909090909091,0.09999999999999999,22,18
+EN-Alto-1/Breathy/all is found/Breathy_Group/0009.wav,EN-Alto-1/Breathy/all is found/Breathy_Group/0009.musicxml,0.0,0.0,0.0,4,3
+EN-Alto-2/Glissando/You Raise Me Up/Glissando_Group/0006.wav,EN-Alto-2/Glissando/You Raise Me Up/Glissando_Group/0006.musicxml,0.35294117647058826,0.5454545454545454,0.42857142857142855,11,17
+EN-Alto-2/Pharyngeal/Young And Beautiful/Control_Group/0004.wav,EN-Alto-2/Pharyngeal/Young And Beautiful/Control_Group/0004.musicxml,0.23529411764705882,0.2,0.2162162162162162,20,17
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Sparks Fly/Control_Group/0002.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Sparks Fly/Control_Group/0002.musicxml,0.13333333333333333,0.11764705882352941,0.125,17,15
+EN-Alto-1/Glissando/rolling in the deep/Control_Group/0007.wav,EN-Alto-1/Glissando/rolling in the deep/Control_Group/0007.musicxml,0.3157894736842105,0.21428571428571427,0.2553191489361702,28,19
+EN-Tenor-1/Breathy/Long Live/Breathy_Group/0006.wav,EN-Tenor-1/Breathy/Long Live/Breathy_Group/0006.musicxml,0.5,0.42857142857142855,0.4615384615384615,21,18
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Umbrella/Mixed_Voice_Group/0005.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Umbrella/Mixed_Voice_Group/0005.musicxml,0.14285714285714285,0.10810810810810811,0.12307692307692308,37,28
+EN-Tenor-1/Breathy/Long Live/Control_Group/0007.wav,EN-Tenor-1/Breathy/Long Live/Control_Group/0007.musicxml,0.5,0.42857142857142855,0.4615384615384615,21,18
+EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0003.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0003.musicxml,0.08333333333333333,0.1,0.0909090909090909,10,12
+EN-Alto-2/Mixed_Voice_and_Falsetto/You Belong With Me/Mixed_Voice_Group/0001.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/You Belong With Me/Mixed_Voice_Group/0001.musicxml,0.375,0.23076923076923078,0.2857142857142857,26,16
+EN-Alto-1/Vibrato/if you love me for me/Control_Group/0008.wav,EN-Alto-1/Vibrato/if you love me for me/Control_Group/0008.musicxml,0.38461538461538464,0.4166666666666667,0.4,12,13
+EN-Tenor-1/Vibrato/Stay/Control_Group/0000.wav,EN-Tenor-1/Vibrato/Stay/Control_Group/0000.musicxml,0.4117647058823529,0.4117647058823529,0.4117647058823529,17,17
+EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0018.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0018.musicxml,0.25,0.3333333333333333,0.28571428571428575,9,12
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Firework/Falsetto_Group/0001.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Firework/Falsetto_Group/0001.musicxml,0.46153846153846156,0.2857142857142857,0.35294117647058826,21,13
+EN-Alto-2/Breathy/Safe and Sound/Control_Group/0002.wav,EN-Alto-2/Breathy/Safe and Sound/Control_Group/0002.musicxml,0.6111111111111112,0.5789473684210527,0.5945945945945946,19,18
+EN-Alto-1/Mixed_Voice_and_Falsetto/make it shine/Control_Group/0004.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/make it shine/Control_Group/0004.musicxml,0.4857142857142857,0.4358974358974359,0.45945945945945943,39,35
+EN-Alto-1/Glissando/rolling in the deep/Control_Group/0008.wav,EN-Alto-1/Glissando/rolling in the deep/Control_Group/0008.musicxml,0.2608695652173913,0.2608695652173913,0.2608695652173913,23,23
+EN-Alto-2/Glissando/My Love/Control_Group/0005.wav,EN-Alto-2/Glissando/My Love/Control_Group/0005.musicxml,0.29411764705882354,0.29411764705882354,0.29411764705882354,17,17
+EN-Alto-2/Breathy/Someone Like You/Breathy_Group/0009.wav,EN-Alto-2/Breathy/Someone Like You/Breathy_Group/0009.musicxml,0.11764705882352941,0.15384615384615385,0.13333333333333333,13,17
+EN-Tenor-1/Pharyngeal/Enchanted/Pharyngeal_Group/0006.wav,EN-Tenor-1/Pharyngeal/Enchanted/Pharyngeal_Group/0006.musicxml,0.35,0.3684210526315789,0.358974358974359,19,20
+EN-Alto-2/Mixed_Voice_and_Falsetto/Let Her Go/Control_Group/0005.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Let Her Go/Control_Group/0005.musicxml,0.23076923076923078,0.16666666666666666,0.1935483870967742,18,13
+EN-Alto-2/Breathy/My Love/Control_Group/0005.wav,EN-Alto-2/Breathy/My Love/Control_Group/0005.musicxml,0.18181818181818182,0.125,0.14814814814814814,16,11
+EN-Alto-1/Mixed_Voice_and_Falsetto/Arriety's song/Control_Group/0000.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/Arriety's song/Control_Group/0000.musicxml,0.3,0.42857142857142855,0.3529411764705882,7,10
+EN-Alto-2/Glissando/Love Story/Control_Group/0003.wav,EN-Alto-2/Glissando/Love Story/Control_Group/0003.musicxml,0.4230769230769231,0.2894736842105263,0.34375,38,26
+EN-Alto-1/Mixed_Voice_and_Falsetto/my love/Mixed_Voice_Group/0006.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/my love/Mixed_Voice_Group/0006.musicxml,0.4,0.35294117647058826,0.37500000000000006,17,15
+EN-Alto-2/Vibrato/My Heart Will Go On/Control_Group/0007.wav,EN-Alto-2/Vibrato/My Heart Will Go On/Control_Group/0007.musicxml,0.5,0.36363636363636365,0.4210526315789474,11,8
+EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0003.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0003.musicxml,0.4666666666666667,0.5,0.4827586206896552,14,15
+EN-Tenor-1/Pharyngeal/You Belong With Me/Control_Group/0007.wav,EN-Tenor-1/Pharyngeal/You Belong With Me/Control_Group/0007.musicxml,0.45454545454545453,0.5555555555555556,0.5,9,11
+EN-Tenor-1/Vibrato/You Belong With Me/Vibrato_Group/0004.wav,EN-Tenor-1/Vibrato/You Belong With Me/Vibrato_Group/0004.musicxml,0.09090909090909091,0.1,0.09523809523809525,20,22
+EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0008.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Falsetto_Group/0008.musicxml,0.13333333333333333,0.13333333333333333,0.13333333333333333,15,15
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Firework/Control_Group/0003.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Firework/Control_Group/0003.musicxml,0.0,0.0,0.0,18,1
+EN-Alto-2/Pharyngeal/Someone Like You/Control_Group/0002.wav,EN-Alto-2/Pharyngeal/Someone Like You/Control_Group/0002.musicxml,0.4375,0.5384615384615384,0.4827586206896552,13,16

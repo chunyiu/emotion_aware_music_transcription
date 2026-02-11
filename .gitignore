@@ -1,0 +1,55 @@
+# Environments
+.env
+.venv
+/env
+/venv
+/.venv
+env.bak/
+venv.bak/
+../English
+English
+data/
+/__pycache__/
+pipeline1_output/
+pipeline2_output/
+
+# macos
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+data/raw/archive/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+#other files
+notebooks/mock_transcription.mid
+notebooks/mock_transcription.pdf
+data/raw/archive/
+data/GTSinger_sample_50/
+librosaviterbi.txt
+Lex/param_sweep_results/Midi Files

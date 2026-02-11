@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+librosa
+pretty_midi
+music21
+torch
+torchaudio
+datasets
+tqdm
+IPython

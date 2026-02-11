@@ -1,0 +1,11 @@
+{
+  "avg_f_measure": 0.2788733348231203,
+  "avg_precision": 0.28802130194105563,
+  "avg_recall": 0.27657642996121884,
+  "avg_raw_pitch_accuracy": 0.8449753298073204,
+  "avg_raw_chroma_accuracy": 0.8449753298073204,
+  "avg_overall_accuracy": 0.8687700820630472,
+  "avg_voicing_recall": 0.8733732926511584,
+  "avg_voicing_false_alarm": 0.023203007476670257,
+  "total_evaluated": 50
+}

@@ -1,0 +1,51 @@
+file,musicxml_output,precision,recall,f_measure,ref_count,pred_count
+EN-Alto-2/Mixed_Voice_and_Falsetto/You Raise Me Up/Control_Group/0000.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/You Raise Me Up/Control_Group/0000.musicxml,0.3333333333333333,0.3,0.3157894736842105,10,9
+EN-Tenor-1/Breathy/I Knew You Were Trouble/Control_Group/0005.wav,EN-Tenor-1/Breathy/I Knew You Were Trouble/Control_Group/0005.musicxml,0.30434782608695654,0.2916666666666667,0.2978723404255319,24,23
+EN-Alto-1/Mixed_Voice_and_Falsetto/yesterday once more/Mixed_Voice_Group/0006.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/yesterday once more/Mixed_Voice_Group/0006.musicxml,0.35,0.3181818181818182,0.3333333333333333,22,20
+EN-Tenor-1/Glissando/Long Live/Glissando_Group/0001.wav,EN-Tenor-1/Glissando/Long Live/Glissando_Group/0001.musicxml,0.3,0.2608695652173913,0.27906976744186046,23,20
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Enchanted/Mixed_Voice_Group/0003.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Enchanted/Mixed_Voice_Group/0003.musicxml,0.4,0.42105263157894735,0.41025641025641024,19,20
+EN-Tenor-1/Pharyngeal/You Belong With Me/Control_Group/0010.wav,EN-Tenor-1/Pharyngeal/You Belong With Me/Control_Group/0010.musicxml,0.3333333333333333,0.2903225806451613,0.3103448275862069,31,27
+EN-Alto-1/Mixed_Voice_and_Falsetto/big big world/Mixed_Voice_Group/0012.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/big big world/Mixed_Voice_Group/0012.musicxml,0.5,0.4166666666666667,0.45454545454545453,24,20
+EN-Alto-1/Mixed_Voice_and_Falsetto/seasons in the sun/Falsetto_Group/0008.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/seasons in the sun/Falsetto_Group/0008.musicxml,0.0,0.0,0.0,16,11
+EN-Alto-1/Mixed_Voice_and_Falsetto/make it shine/Control_Group/0010.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/make it shine/Control_Group/0010.musicxml,0.46153846153846156,0.3870967741935484,0.42105263157894735,31,26
+EN-Alto-2/Glissando/A Thousand Years/Control_Group/0001.wav,EN-Alto-2/Glissando/A Thousand Years/Control_Group/0001.musicxml,0.6470588235294118,0.5789473684210527,0.6111111111111113,19,17
+EN-Tenor-1/Pharyngeal/Enchanted/Pharyngeal_Group/0002.wav,EN-Tenor-1/Pharyngeal/Enchanted/Pharyngeal_Group/0002.musicxml,0.13333333333333333,0.10526315789473684,0.11764705882352941,19,15
+EN-Alto-2/Pharyngeal/Yesterday Once More/Control_Group/0007.wav,EN-Alto-2/Pharyngeal/Yesterday Once More/Control_Group/0007.musicxml,0.45454545454545453,0.5555555555555556,0.5,9,11
+EN-Alto-2/Mixed_Voice_and_Falsetto/What Are Words/Falsetto_Group/0007.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/What Are Words/Falsetto_Group/0007.musicxml,0.6666666666666666,0.5833333333333334,0.6222222222222222,24,21
+EN-Alto-2/Breathy/Love Me Like You Do/Breathy_Group/0002.wav,EN-Alto-2/Breathy/Love Me Like You Do/Breathy_Group/0002.musicxml,0.3333333333333333,0.21052631578947367,0.2580645161290323,19,12
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Style/Control_Group/0002.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Style/Control_Group/0002.musicxml,0.0,0.0,0.0,15,12
+EN-Tenor-1/Glissando/You Belong With Me/Control_Group/0011.wav,EN-Tenor-1/Glissando/You Belong With Me/Control_Group/0011.musicxml,0.09090909090909091,0.04,0.05555555555555555,25,11
+EN-Alto-2/Pharyngeal/You Raise Me Up/Pharyngeal_Group/0007.wav,EN-Alto-2/Pharyngeal/You Raise Me Up/Pharyngeal_Group/0007.musicxml,0.18181818181818182,0.18181818181818182,0.18181818181818182,11,11
+EN-Alto-1/Pharyngeal/clouds/Control_Group/0016.wav,EN-Alto-1/Pharyngeal/clouds/Control_Group/0016.musicxml,0.14285714285714285,0.14285714285714285,0.14285714285714285,14,14
+EN-Alto-1/Pharyngeal/monsters/Pharyngeal_Group/0008.wav,EN-Alto-1/Pharyngeal/monsters/Pharyngeal_Group/0008.musicxml,0.2857142857142857,0.4,0.3333333333333333,10,14
+EN-Alto-2/Pharyngeal/My Love/Control_Group/0000.wav,EN-Alto-2/Pharyngeal/My Love/Control_Group/0000.musicxml,0.15384615384615385,0.18181818181818182,0.16666666666666669,11,13
+EN-Tenor-1/Glissando/Shallow/Control_Group/0006.wav,EN-Tenor-1/Glissando/Shallow/Control_Group/0006.musicxml,0.07692307692307693,0.05263157894736842,0.0625,19,13
+EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0007.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Cry on My Shoulder/Falsetto_Group/0007.musicxml,0.3333333333333333,0.35714285714285715,0.3448275862068965,14,15
+EN-Tenor-1/Vibrato/I Knew You Were Trouble/Vibrato_Group/0000.wav,EN-Tenor-1/Vibrato/I Knew You Were Trouble/Vibrato_Group/0000.musicxml,0.21739130434782608,0.2777777777777778,0.24390243902439024,18,23
+EN-Tenor-1/Vibrato/Shallow/Vibrato_Group/0000.wav,EN-Tenor-1/Vibrato/Shallow/Vibrato_Group/0000.musicxml,0.07692307692307693,0.07692307692307693,0.07692307692307693,13,13
+EN-Tenor-1/Breathy/Always Remember Us This Way/Breathy_Group/0009.wav,EN-Tenor-1/Breathy/Always Remember Us This Way/Breathy_Group/0009.musicxml,0.15789473684210525,0.125,0.13953488372093023,24,19
+EN-Alto-2/Mixed_Voice_and_Falsetto/Love Me Like You Do/Control_Group/0008.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Love Me Like You Do/Control_Group/0008.musicxml,0.46153846153846156,0.46153846153846156,0.46153846153846156,13,13
+EN-Tenor-1/Breathy/Always Remember Us This Way/Breathy_Group/0007.wav,EN-Tenor-1/Breathy/Always Remember Us This Way/Breathy_Group/0007.musicxml,0.2857142857142857,0.25,0.26666666666666666,8,7
+EN-Alto-2/Mixed_Voice_and_Falsetto/Someone You Loved/Mixed_Voice_Group/0004.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Someone You Loved/Mixed_Voice_Group/0004.musicxml,0.30434782608695654,0.2692307692307692,0.28571428571428575,26,23
+EN-Alto-1/Mixed_Voice_and_Falsetto/how does a moment last forever/Falsetto_Group/0013.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/how does a moment last forever/Falsetto_Group/0013.musicxml,0.16,0.21052631578947367,0.1818181818181818,19,25
+EN-Alto-1/Glissando/tell me that you love me/Control_Group/0008.wav,EN-Alto-1/Glissando/tell me that you love me/Control_Group/0008.musicxml,0.3333333333333333,0.38095238095238093,0.35555555555555557,21,24
+EN-Tenor-1/Vibrato/Rolling in the Deep/Vibrato_Group/0005.wav,EN-Tenor-1/Vibrato/Rolling in the Deep/Vibrato_Group/0005.musicxml,0.25,0.21428571428571427,0.23076923076923075,14,12
+EN-Alto-2/Mixed_Voice_and_Falsetto/Hey Jude/Control_Group/0005.wav,EN-Alto-2/Mixed_Voice_and_Falsetto/Hey Jude/Control_Group/0005.musicxml,0.17647058823529413,0.2,0.18750000000000003,15,17
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Style/Mixed_Voice_Group/0003.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Style/Mixed_Voice_Group/0003.musicxml,0.2631578947368421,0.2631578947368421,0.2631578947368421,19,19
+EN-Alto-1/Pharyngeal/beauty and the beast/Control_Group/0012.wav,EN-Alto-1/Pharyngeal/beauty and the beast/Control_Group/0012.musicxml,0.3,0.2727272727272727,0.28571428571428564,11,10
+EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Control_Group/0018.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/let it go/Control_Group/0018.musicxml,0.16666666666666666,0.18181818181818182,0.17391304347826086,11,12
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Sparks Fly/Mixed_Voice_Group/0006.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Sparks Fly/Mixed_Voice_Group/0006.musicxml,0.07142857142857142,0.06666666666666667,0.0689655172413793,30,28
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Enchanted/Mixed_Voice_Group/0005.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Enchanted/Mixed_Voice_Group/0005.musicxml,0.6363636363636364,0.7,0.6666666666666666,10,11
+EN-Alto-1/Vibrato/edelweiss/Vibrato_Group/0001.wav,EN-Alto-1/Vibrato/edelweiss/Vibrato_Group/0001.musicxml,0.3,0.42857142857142855,0.3529411764705882,7,10
+EN-Alto-2/Breathy/What Are Words/Control_Group/0002.wav,EN-Alto-2/Breathy/What Are Words/Control_Group/0002.musicxml,0.55,0.4782608695652174,0.5116279069767442,23,20
+EN-Alto-1/Pharyngeal/who says/Control_Group/0009.wav,EN-Alto-1/Pharyngeal/who says/Control_Group/0009.musicxml,0.2222222222222222,0.2222222222222222,0.2222222222222222,18,18
+EN-Tenor-1/Pharyngeal/Stay/Control_Group/0007.wav,EN-Tenor-1/Pharyngeal/Stay/Control_Group/0007.musicxml,0.3125,0.3125,0.3125,16,16
+EN-Tenor-1/Pharyngeal/I Knew You Were Trouble/Pharyngeal_Group/0005.wav,EN-Tenor-1/Pharyngeal/I Knew You Were Trouble/Pharyngeal_Group/0005.musicxml,0.15384615384615385,0.16,0.1568627450980392,25,26
+EN-Tenor-1/Mixed_Voice_and_Falsetto/Take a Bow/Control_Group/0011.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/Take a Bow/Control_Group/0011.musicxml,0.16666666666666666,0.17647058823529413,0.17142857142857143,17,18
+EN-Alto-1/Mixed_Voice_and_Falsetto/yesterday once more/Control_Group/0002.wav,EN-Alto-1/Mixed_Voice_and_Falsetto/yesterday once more/Control_Group/0002.musicxml,0.15789473684210525,0.1875,0.17142857142857143,16,19
+EN-Tenor-1/Breathy/Long Live/Breathy_Group/0004.wav,EN-Tenor-1/Breathy/Long Live/Breathy_Group/0004.musicxml,0.38461538461538464,0.3125,0.3448275862068966,16,13
+EN-Alto-2/Breathy/Fly Me to the Moon/Control_Group/0004.wav,EN-Alto-2/Breathy/Fly Me to the Moon/Control_Group/0004.musicxml,0.4,0.375,0.38709677419354843,16,15
+EN-Alto-2/Pharyngeal/Safe and Sound/Control_Group/0002.wav,EN-Alto-2/Pharyngeal/Safe and Sound/Control_Group/0002.musicxml,0.6111111111111112,0.6111111111111112,0.6111111111111112,18,18
+EN-Tenor-1/Breathy/Long Live/Control_Group/0009.wav,EN-Tenor-1/Breathy/Long Live/Control_Group/0009.musicxml,0.4,0.3,0.34285714285714286,20,15
+EN-Tenor-1/Mixed_Voice_and_Falsetto/I Know Places/Mixed_Voice_Group/0002.wav,EN-Tenor-1/Mixed_Voice_and_Falsetto/I Know Places/Mixed_Voice_Group/0002.musicxml,0.13333333333333333,0.13333333333333333,0.13333333333333333,15,15
+EN-Tenor-1/Glissando/I Knew You Were Trouble/Glissando_Group/0000.wav,EN-Tenor-1/Glissando/I Knew You Were Trouble/Glissando_Group/0000.musicxml,0.047619047619047616,0.058823529411764705,0.05263157894736842,17,21

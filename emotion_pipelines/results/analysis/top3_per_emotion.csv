@@ -1,0 +1,14 @@
+filename,file_path,predicted_emotion,confidence
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Mixed_Voice_and_Falsetto\Style\Control_Group\0005.wav,angry,0.655
+0004.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Mixed_Voice_and_Falsetto\Dark Paradise\Control_Group\0004.wav,angry,0.645
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\Vibrato\All of Me\Vibrato_Group\0005.wav,angry,0.62
+0002.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Breathy\all is found\Breathy_Group\0002.wav,disgust,0.26649999999999996
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\Breathy\Easy On Me\Control_Group\0005.wav,fearful,0.505
+0003.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Pharyngeal\monsters\Pharyngeal_Group\0003.wav,fearful,0.46
+0004.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Mixed_Voice_and_Falsetto\Style\Falsetto_Group\0004.wav,fearful,0.445
+0008.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Glissando\for the first time in forever\Control_Group\0008.wav,happy,0.41
+0003.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Vibrato\All I Ask\Vibrato_Group\0003.wav,happy,0.36
+0012.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\Breathy\Always Remember Us This Way\Breathy_Group\0012.wav,happy,0.33
+0000.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Breathy\who says\Control_Group\0000.wav,sad,0.36
+0012.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Mixed_Voice_and_Falsetto\let it go\Falsetto_Group\0012.wav,sad,0.27
+0005.wav,vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\Breathy\someday or oneday\Breathy_Group\0005.wav,sad,0.22

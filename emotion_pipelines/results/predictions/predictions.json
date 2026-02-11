@@ -1,0 +1,1532 @@
+[
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\all is found\\Breathy_Group\\0002.wav",
+    "filename": "0002.wav",
+    "predicted_emotion": "disgust",
+    "confidence": 0.26649999999999996,
+    "top3_predictions": [
+      [
+        "disgust",
+        0.26649999999999996
+      ],
+      [
+        "fearful",
+        0.1675
+      ],
+      [
+        "surprised",
+        0.145
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.1305,
+      "calm": 0.04,
+      "disgust": 0.26649999999999996,
+      "fearful": 0.1675,
+      "happy": 0.09050000000000001,
+      "neutral": 0.045,
+      "sad": 0.115,
+      "surprised": 0.145
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\innocence\\Breathy_Group\\0000.wav",
+    "filename": "0000.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.33003424657534247,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.33003424657534247
+      ],
+      [
+        "happy",
+        0.175
+      ],
+      [
+        "surprised",
+        0.16472602739726028
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.11506849315068493,
+      "calm": 0.02,
+      "disgust": 0.13013698630136986,
+      "fearful": 0.33003424657534247,
+      "happy": 0.175,
+      "neutral": 0.01,
+      "sad": 0.05503424657534246,
+      "surprised": 0.16472602739726028
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\innocence\\Breathy_Group\\0001.wav",
+    "filename": "0001.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.295,
+    "top3_predictions": [
+      [
+        "happy",
+        0.295
+      ],
+      [
+        "disgust",
+        0.205
+      ],
+      [
+        "fearful",
+        0.2
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.115,
+      "calm": 0.01,
+      "disgust": 0.205,
+      "fearful": 0.2,
+      "happy": 0.295,
+      "neutral": 0.01,
+      "sad": 0.045,
+      "surprised": 0.12
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\innocence\\Breathy_Group\\0010.wav",
+    "filename": "0010.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.43,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.43
+      ],
+      [
+        "angry",
+        0.21
+      ],
+      [
+        "happy",
+        0.205
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.21,
+      "calm": 0.0,
+      "disgust": 0.07,
+      "fearful": 0.43,
+      "happy": 0.205,
+      "neutral": 0.0,
+      "sad": 0.02,
+      "surprised": 0.065
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\innocence\\Breathy_Group\\0013.wav",
+    "filename": "0013.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.28,
+    "top3_predictions": [
+      [
+        "happy",
+        0.28
+      ],
+      [
+        "fearful",
+        0.255
+      ],
+      [
+        "angry",
+        0.165
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.165,
+      "calm": 0.005,
+      "disgust": 0.155,
+      "fearful": 0.255,
+      "happy": 0.28,
+      "neutral": 0.0,
+      "sad": 0.035,
+      "surprised": 0.105
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\someday or oneday\\Breathy_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "sad",
+    "confidence": 0.22,
+    "top3_predictions": [
+      [
+        "sad",
+        0.22
+      ],
+      [
+        "surprised",
+        0.185
+      ],
+      [
+        "happy",
+        0.165
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.05,
+      "calm": 0.095,
+      "disgust": 0.115,
+      "fearful": 0.1,
+      "happy": 0.165,
+      "neutral": 0.07,
+      "sad": 0.22,
+      "surprised": 0.185
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Breathy\\who says\\Control_Group\\0000.wav",
+    "filename": "0000.wav",
+    "predicted_emotion": "sad",
+    "confidence": 0.36,
+    "top3_predictions": [
+      [
+        "sad",
+        0.36
+      ],
+      [
+        "calm",
+        0.265
+      ],
+      [
+        "fearful",
+        0.22
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.0,
+      "calm": 0.265,
+      "disgust": 0.005,
+      "fearful": 0.22,
+      "happy": 0.01,
+      "neutral": 0.075,
+      "sad": 0.36,
+      "surprised": 0.065
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Glissando\\for the first time in forever\\Control_Group\\0008.wav",
+    "filename": "0008.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.41,
+    "top3_predictions": [
+      [
+        "happy",
+        0.41
+      ],
+      [
+        "fearful",
+        0.22
+      ],
+      [
+        "angry",
+        0.185
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.185,
+      "calm": 0.0,
+      "disgust": 0.11,
+      "fearful": 0.22,
+      "happy": 0.41,
+      "neutral": 0.0,
+      "sad": 0.02,
+      "surprised": 0.055
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Glissando\\tell me that you love me\\Control_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.425,
+    "top3_predictions": [
+      [
+        "angry",
+        0.425
+      ],
+      [
+        "fearful",
+        0.28
+      ],
+      [
+        "happy",
+        0.115
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.425,
+      "calm": 0.0,
+      "disgust": 0.115,
+      "fearful": 0.28,
+      "happy": 0.115,
+      "neutral": 0.0,
+      "sad": 0.005,
+      "surprised": 0.06
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Mixed_Voice_and_Falsetto\\let it go\\Falsetto_Group\\0012.wav",
+    "filename": "0012.wav",
+    "predicted_emotion": "sad",
+    "confidence": 0.27,
+    "top3_predictions": [
+      [
+        "sad",
+        0.27
+      ],
+      [
+        "fearful",
+        0.205
+      ],
+      [
+        "happy",
+        0.175
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.035,
+      "calm": 0.055,
+      "disgust": 0.115,
+      "fearful": 0.205,
+      "happy": 0.175,
+      "neutral": 0.065,
+      "sad": 0.27,
+      "surprised": 0.08
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Pharyngeal\\love stroy\\Pharyngeal_Group\\0001.wav",
+    "filename": "0001.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.295,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.295
+      ],
+      [
+        "angry",
+        0.255
+      ],
+      [
+        "happy",
+        0.23
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.255,
+      "calm": 0.0,
+      "disgust": 0.15,
+      "fearful": 0.295,
+      "happy": 0.23,
+      "neutral": 0.0,
+      "sad": 0.015,
+      "surprised": 0.055
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Pharyngeal\\monsters\\Pharyngeal_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.46,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.46
+      ],
+      [
+        "angry",
+        0.205
+      ],
+      [
+        "happy",
+        0.2
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.205,
+      "calm": 0.0,
+      "disgust": 0.055,
+      "fearful": 0.46,
+      "happy": 0.2,
+      "neutral": 0.0,
+      "sad": 0.06,
+      "surprised": 0.02
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-1\\Pharyngeal\\tell me that you love me\\Control_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.255,
+    "top3_predictions": [
+      [
+        "happy",
+        0.255
+      ],
+      [
+        "fearful",
+        0.25
+      ],
+      [
+        "angry",
+        0.185
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.185,
+      "calm": 0.0,
+      "disgust": 0.165,
+      "fearful": 0.25,
+      "happy": 0.255,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.12
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Breathy\\Easy On Me\\Control_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.505,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.505
+      ],
+      [
+        "happy",
+        0.17
+      ],
+      [
+        "angry",
+        0.145
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.145,
+      "calm": 0.01,
+      "disgust": 0.04,
+      "fearful": 0.505,
+      "happy": 0.17,
+      "neutral": 0.0,
+      "sad": 0.08,
+      "surprised": 0.05
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\All of Me\\Falsetto_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.31,
+    "top3_predictions": [
+      [
+        "happy",
+        0.31
+      ],
+      [
+        "fearful",
+        0.295
+      ],
+      [
+        "sad",
+        0.135
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.12,
+      "calm": 0.01,
+      "disgust": 0.075,
+      "fearful": 0.295,
+      "happy": 0.31,
+      "neutral": 0.005,
+      "sad": 0.135,
+      "surprised": 0.05
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\City Of Stars\\Mixed_Voice_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.23,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.23
+      ],
+      [
+        "surprised",
+        0.18
+      ],
+      [
+        "happy",
+        0.175
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.16,
+      "calm": 0.025,
+      "disgust": 0.17,
+      "fearful": 0.23,
+      "happy": 0.175,
+      "neutral": 0.015,
+      "sad": 0.045,
+      "surprised": 0.18
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\Dream It Possible\\Falsetto_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.295,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.295
+      ],
+      [
+        "happy",
+        0.195
+      ],
+      [
+        "angry",
+        0.155
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.155,
+      "calm": 0.01,
+      "disgust": 0.15,
+      "fearful": 0.295,
+      "happy": 0.195,
+      "neutral": 0.0,
+      "sad": 0.1,
+      "surprised": 0.095
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\Hey Jude\\Falsetto_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.265,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.265
+      ],
+      [
+        "sad",
+        0.24
+      ],
+      [
+        "happy",
+        0.14
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.12,
+      "calm": 0.02,
+      "disgust": 0.085,
+      "fearful": 0.265,
+      "happy": 0.14,
+      "neutral": 0.02,
+      "sad": 0.24,
+      "surprised": 0.11
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\My Love\\Control_Group\\0002.wav",
+    "filename": "0002.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.39,
+    "top3_predictions": [
+      [
+        "angry",
+        0.39
+      ],
+      [
+        "fearful",
+        0.34
+      ],
+      [
+        "happy",
+        0.2
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.39,
+      "calm": 0.0,
+      "disgust": 0.02,
+      "fearful": 0.34,
+      "happy": 0.2,
+      "neutral": 0.0,
+      "sad": 0.04,
+      "surprised": 0.01
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\You Raise Me Up\\Control_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.3,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.3
+      ],
+      [
+        "angry",
+        0.27
+      ],
+      [
+        "happy",
+        0.2
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.27,
+      "calm": 0.0,
+      "disgust": 0.08,
+      "fearful": 0.3,
+      "happy": 0.2,
+      "neutral": 0.005,
+      "sad": 0.035,
+      "surprised": 0.11
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Mixed_Voice_and_Falsetto\\You Raise Me Up\\Mixed_Voice_Group\\0006.wav",
+    "filename": "0006.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.26,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.26
+      ],
+      [
+        "happy",
+        0.24
+      ],
+      [
+        "surprised",
+        0.155
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.135,
+      "calm": 0.0,
+      "disgust": 0.075,
+      "fearful": 0.26,
+      "happy": 0.24,
+      "neutral": 0.0,
+      "sad": 0.135,
+      "surprised": 0.155
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Vibrato\\All of Me\\Control_Group\\0000.wav",
+    "filename": "0000.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.31,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.31
+      ],
+      [
+        "happy",
+        0.28
+      ],
+      [
+        "angry",
+        0.18
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.18,
+      "calm": 0.0,
+      "disgust": 0.1,
+      "fearful": 0.31,
+      "happy": 0.28,
+      "neutral": 0.005,
+      "sad": 0.025,
+      "surprised": 0.1
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Alto-2\\Vibrato\\All of Me\\Vibrato_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.62,
+    "top3_predictions": [
+      [
+        "angry",
+        0.62
+      ],
+      [
+        "fearful",
+        0.245
+      ],
+      [
+        "happy",
+        0.095
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.62,
+      "calm": 0.0,
+      "disgust": 0.03,
+      "fearful": 0.245,
+      "happy": 0.095,
+      "neutral": 0.0,
+      "sad": 0.005,
+      "surprised": 0.005
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Breathy\\Always Remember Us This Way\\Breathy_Group\\0012.wav",
+    "filename": "0012.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.33,
+    "top3_predictions": [
+      [
+        "happy",
+        0.33
+      ],
+      [
+        "angry",
+        0.315
+      ],
+      [
+        "fearful",
+        0.265
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.315,
+      "calm": 0.0,
+      "disgust": 0.06,
+      "fearful": 0.265,
+      "happy": 0.33,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.005
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Breathy\\Million Reasons\\Control_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.3,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.3
+      ],
+      [
+        "angry",
+        0.255
+      ],
+      [
+        "happy",
+        0.23
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.255,
+      "calm": 0.0,
+      "disgust": 0.09,
+      "fearful": 0.3,
+      "happy": 0.23,
+      "neutral": 0.005,
+      "sad": 0.04,
+      "surprised": 0.08
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Breathy\\Shallow\\Control_Group\\0008.wav",
+    "filename": "0008.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.265,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.265
+      ],
+      [
+        "happy",
+        0.19
+      ],
+      [
+        "disgust",
+        0.16
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.13,
+      "calm": 0.02,
+      "disgust": 0.16,
+      "fearful": 0.265,
+      "happy": 0.19,
+      "neutral": 0.0,
+      "sad": 0.095,
+      "surprised": 0.14
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Breathy\\Stay\\Breathy_Group\\0010.wav",
+    "filename": "0010.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.345,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.345
+      ],
+      [
+        "surprised",
+        0.175
+      ],
+      [
+        "angry",
+        0.16
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.16,
+      "calm": 0.005,
+      "disgust": 0.135,
+      "fearful": 0.345,
+      "happy": 0.135,
+      "neutral": 0.0,
+      "sad": 0.045,
+      "surprised": 0.175
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Breathy\\What Was I Made For\u2229\u255d\u0192\\Control_Group\\0007.wav",
+    "filename": "0007.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.34,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.34
+      ],
+      [
+        "happy",
+        0.24
+      ],
+      [
+        "angry",
+        0.18
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.18,
+      "calm": 0.005,
+      "disgust": 0.09,
+      "fearful": 0.34,
+      "happy": 0.24,
+      "neutral": 0.0,
+      "sad": 0.115,
+      "surprised": 0.03
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Glissando\\All I Ask\\Glissando_Group\\0007.wav",
+    "filename": "0007.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.475,
+    "top3_predictions": [
+      [
+        "angry",
+        0.475
+      ],
+      [
+        "happy",
+        0.245
+      ],
+      [
+        "fearful",
+        0.245
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.475,
+      "calm": 0.0,
+      "disgust": 0.005,
+      "fearful": 0.245,
+      "happy": 0.245,
+      "neutral": 0.0,
+      "sad": 0.015,
+      "surprised": 0.015
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Glissando\\Always Remember Us This Way\\Control_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.315,
+    "top3_predictions": [
+      [
+        "happy",
+        0.315
+      ],
+      [
+        "angry",
+        0.27506849315068493
+      ],
+      [
+        "fearful",
+        0.23503424657534247
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.27506849315068493,
+      "calm": 0.0,
+      "disgust": 0.07013698630136986,
+      "fearful": 0.23503424657534247,
+      "happy": 0.315,
+      "neutral": 0.0,
+      "sad": 0.050034246575342466,
+      "surprised": 0.05472602739726027
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Glissando\\Always Remember Us This Way\\Glissando_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.295,
+    "top3_predictions": [
+      [
+        "happy",
+        0.295
+      ],
+      [
+        "fearful",
+        0.295
+      ],
+      [
+        "angry",
+        0.285
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.285,
+      "calm": 0.0,
+      "disgust": 0.06,
+      "fearful": 0.295,
+      "happy": 0.295,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.04
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Glissando\\You Belong With Me\\Control_Group\\0002.wav",
+    "filename": "0002.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.265,
+    "top3_predictions": [
+      [
+        "happy",
+        0.265
+      ],
+      [
+        "fearful",
+        0.24
+      ],
+      [
+        "angry",
+        0.195
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.195,
+      "calm": 0.01,
+      "disgust": 0.12,
+      "fearful": 0.24,
+      "happy": 0.265,
+      "neutral": 0.005,
+      "sad": 0.095,
+      "surprised": 0.07
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Glissando\\You Belong With Me\\Glissando_Group\\0007.wav",
+    "filename": "0007.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.355,
+    "top3_predictions": [
+      [
+        "angry",
+        0.355
+      ],
+      [
+        "happy",
+        0.33
+      ],
+      [
+        "fearful",
+        0.23
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.355,
+      "calm": 0.0,
+      "disgust": 0.025,
+      "fearful": 0.23,
+      "happy": 0.33,
+      "neutral": 0.0,
+      "sad": 0.03,
+      "surprised": 0.03
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Always Remember Us This Way\\Mixed_Voice_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.255,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.255
+      ],
+      [
+        "happy",
+        0.245
+      ],
+      [
+        "disgust",
+        0.135
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.13,
+      "calm": 0.015,
+      "disgust": 0.135,
+      "fearful": 0.255,
+      "happy": 0.245,
+      "neutral": 0.01,
+      "sad": 0.105,
+      "surprised": 0.105
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Dark Paradise\\Control_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.645,
+    "top3_predictions": [
+      [
+        "angry",
+        0.645
+      ],
+      [
+        "fearful",
+        0.16
+      ],
+      [
+        "happy",
+        0.145
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.645,
+      "calm": 0.005,
+      "disgust": 0.01,
+      "fearful": 0.16,
+      "happy": 0.145,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.01
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Exile\\Mixed_Voice_Group\\0000.wav",
+    "filename": "0000.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.515,
+    "top3_predictions": [
+      [
+        "angry",
+        0.515
+      ],
+      [
+        "fearful",
+        0.245
+      ],
+      [
+        "happy",
+        0.16
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.515,
+      "calm": 0.0,
+      "disgust": 0.045,
+      "fearful": 0.245,
+      "happy": 0.16,
+      "neutral": 0.0,
+      "sad": 0.02,
+      "surprised": 0.015
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Love on the Brain\\Control_Group\\0010.wav",
+    "filename": "0010.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.53,
+    "top3_predictions": [
+      [
+        "angry",
+        0.53
+      ],
+      [
+        "fearful",
+        0.21
+      ],
+      [
+        "happy",
+        0.17
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.53,
+      "calm": 0.0,
+      "disgust": 0.055,
+      "fearful": 0.21,
+      "happy": 0.17,
+      "neutral": 0.0,
+      "sad": 0.02,
+      "surprised": 0.015
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Shallow\\Control_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.46,
+    "top3_predictions": [
+      [
+        "angry",
+        0.46
+      ],
+      [
+        "fearful",
+        0.25
+      ],
+      [
+        "happy",
+        0.23
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.46,
+      "calm": 0.0,
+      "disgust": 0.025,
+      "fearful": 0.25,
+      "happy": 0.23,
+      "neutral": 0.0,
+      "sad": 0.015,
+      "surprised": 0.02
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Style\\Control_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.655,
+    "top3_predictions": [
+      [
+        "angry",
+        0.655
+      ],
+      [
+        "fearful",
+        0.215
+      ],
+      [
+        "happy",
+        0.105
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.655,
+      "calm": 0.0,
+      "disgust": 0.01,
+      "fearful": 0.215,
+      "happy": 0.105,
+      "neutral": 0.0,
+      "sad": 0.0,
+      "surprised": 0.015
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Style\\Falsetto_Group\\0004.wav",
+    "filename": "0004.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.445,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.445
+      ],
+      [
+        "happy",
+        0.285
+      ],
+      [
+        "disgust",
+        0.085
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.065,
+      "calm": 0.005,
+      "disgust": 0.085,
+      "fearful": 0.445,
+      "happy": 0.285,
+      "neutral": 0.0,
+      "sad": 0.065,
+      "surprised": 0.05
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\Talking to the Moon\\Control_Group\\0001.wav",
+    "filename": "0001.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.595,
+    "top3_predictions": [
+      [
+        "angry",
+        0.595
+      ],
+      [
+        "fearful",
+        0.22
+      ],
+      [
+        "happy",
+        0.145
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.595,
+      "calm": 0.0,
+      "disgust": 0.025,
+      "fearful": 0.22,
+      "happy": 0.145,
+      "neutral": 0.0,
+      "sad": 0.005,
+      "surprised": 0.01
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Mixed_Voice_and_Falsetto\\You Belong With Me\\Mixed_Voice_Group\\0005.wav",
+    "filename": "0005.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.285,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.285
+      ],
+      [
+        "happy",
+        0.245
+      ],
+      [
+        "angry",
+        0.205
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.205,
+      "calm": 0.01,
+      "disgust": 0.15,
+      "fearful": 0.285,
+      "happy": 0.245,
+      "neutral": 0.0,
+      "sad": 0.035,
+      "surprised": 0.07
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Pharyngeal\\All I Ask\\Pharyngeal_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.355,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.355
+      ],
+      [
+        "angry",
+        0.255
+      ],
+      [
+        "happy",
+        0.24
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.255,
+      "calm": 0.0,
+      "disgust": 0.065,
+      "fearful": 0.355,
+      "happy": 0.24,
+      "neutral": 0.0,
+      "sad": 0.045,
+      "surprised": 0.04
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Pharyngeal\\What Was I Made For\u2229\u255d\u0192\\Pharyngeal_Group\\0002.wav",
+    "filename": "0002.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.43,
+    "top3_predictions": [
+      [
+        "angry",
+        0.43
+      ],
+      [
+        "fearful",
+        0.25
+      ],
+      [
+        "happy",
+        0.16
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.43,
+      "calm": 0.0,
+      "disgust": 0.1,
+      "fearful": 0.25,
+      "happy": 0.16,
+      "neutral": 0.0,
+      "sad": 0.035,
+      "surprised": 0.025
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Pharyngeal\\You Belong With Me\\Control_Group\\0002.wav",
+    "filename": "0002.wav",
+    "predicted_emotion": "fearful",
+    "confidence": 0.29,
+    "top3_predictions": [
+      [
+        "fearful",
+        0.29
+      ],
+      [
+        "happy",
+        0.285
+      ],
+      [
+        "angry",
+        0.285
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.285,
+      "calm": 0.0,
+      "disgust": 0.075,
+      "fearful": 0.29,
+      "happy": 0.285,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.04
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Vibrato\\All I Ask\\Vibrato_Group\\0003.wav",
+    "filename": "0003.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.36,
+    "top3_predictions": [
+      [
+        "happy",
+        0.36
+      ],
+      [
+        "sad",
+        0.16
+      ],
+      [
+        "fearful",
+        0.145
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.145,
+      "calm": 0.015,
+      "disgust": 0.1,
+      "fearful": 0.145,
+      "happy": 0.36,
+      "neutral": 0.01,
+      "sad": 0.16,
+      "surprised": 0.065
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Vibrato\\Always Remember Us This Way\\Control_Group\\0007.wav",
+    "filename": "0007.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.275,
+    "top3_predictions": [
+      [
+        "happy",
+        0.275
+      ],
+      [
+        "fearful",
+        0.21
+      ],
+      [
+        "angry",
+        0.18
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.18,
+      "calm": 0.015,
+      "disgust": 0.155,
+      "fearful": 0.21,
+      "happy": 0.275,
+      "neutral": 0.0,
+      "sad": 0.07,
+      "surprised": 0.095
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Vibrato\\I Knew You Were Trouble\\Control_Group\\0000.wav",
+    "filename": "0000.wav",
+    "predicted_emotion": "happy",
+    "confidence": 0.325,
+    "top3_predictions": [
+      [
+        "happy",
+        0.325
+      ],
+      [
+        "fearful",
+        0.22
+      ],
+      [
+        "angry",
+        0.195
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.195,
+      "calm": 0.0,
+      "disgust": 0.135,
+      "fearful": 0.22,
+      "happy": 0.325,
+      "neutral": 0.0,
+      "sad": 0.035,
+      "surprised": 0.09
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Vibrato\\Long Live\\Control_Group\\0007.wav",
+    "filename": "0007.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.505,
+    "top3_predictions": [
+      [
+        "angry",
+        0.505
+      ],
+      [
+        "fearful",
+        0.25
+      ],
+      [
+        "happy",
+        0.185
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.505,
+      "calm": 0.0,
+      "disgust": 0.035,
+      "fearful": 0.25,
+      "happy": 0.185,
+      "neutral": 0.0,
+      "sad": 0.005,
+      "surprised": 0.02
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/GTSinger_sample_50/EN-Tenor-1\\Vibrato\\You Belong With Me\\Vibrato_Group\\0009.wav",
+    "filename": "0009.wav",
+    "predicted_emotion": "angry",
+    "confidence": 0.33,
+    "top3_predictions": [
+      [
+        "angry",
+        0.33
+      ],
+      [
+        "happy",
+        0.3
+      ],
+      [
+        "fearful",
+        0.26
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.33,
+      "calm": 0.0,
+      "disgust": 0.065,
+      "fearful": 0.26,
+      "happy": 0.3,
+      "neutral": 0.0,
+      "sad": 0.025,
+      "surprised": 0.02
+    }
+  },
+  {
+    "file": "vocal-to-score-demo/Input/test_melody.mp3",
+    "filename": "test_melody.mp3",
+    "predicted_emotion": "happy",
+    "confidence": 0.23004716981132078,
+    "top3_predictions": [
+      [
+        "happy",
+        0.23004716981132078
+      ],
+      [
+        "disgust",
+        0.22004716981132078
+      ],
+      [
+        "angry",
+        0.19
+      ]
+    ],
+    "all_probabilities": {
+      "angry": 0.19,
+      "calm": 0.005,
+      "disgust": 0.22004716981132078,
+      "fearful": 0.12,
+      "happy": 0.23004716981132078,
+      "neutral": 0.02,
+      "sad": 0.025,
+      "surprised": 0.18990566037735848
+    }
+  }
+]

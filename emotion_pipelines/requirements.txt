@@ -1,0 +1,24 @@
+# Core numerics and signal processing
+numpy
+scipy
+pandas
+
+# Audio + music processing
+librosa
+music21
+mir_eval
+pretty_midi
+mingus
+mido
+
+# Plotting (some pipelines may show/save plots)
+matplotlib
+
+# Machine learning / models
+scikit-learn
+torch
+transformers
+
+# Pitch trackers
+crepe
+torchcrepe

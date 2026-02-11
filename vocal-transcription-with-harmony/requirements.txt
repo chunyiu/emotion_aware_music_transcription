@@ -1,0 +1,17 @@
+numpy
+pandas
+scipy
+matplotlib
+librosa
+pretty_midi
+mido
+mingus
+music21
+mir_eval
+dtw-python
+crepe
+torch
+torchcrepe
+tensorflow
+transformers
+IPython
