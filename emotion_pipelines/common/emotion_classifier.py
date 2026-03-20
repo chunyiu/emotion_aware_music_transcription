@@ -1,6 +1,7 @@
 """
 Shared RAVDESS-trained emotion classifier.
-Standardized to 339 features: 40 MFCCs (mean+std), 128 mel-specs (mean+std), 3 spectral.
+Standardized to 339 features: 40 MFCCs (mean+std), 128 mel-specs (mean+std),
+3 spectral (centroid, rolloff, zero_crossing_rate) — must match train_emotion_classifier.py.
 """
 
 import numpy as np
@@ -42,13 +43,13 @@ class EmotionClassifier:
 
             # Spectral features (3)
             spectral_centroid = np.mean(librosa.feature.spectral_centroid(y=y, sr=sr))
-            spectral_bandwidth = np.mean(librosa.feature.spectral_bandwidth(y=y, sr=sr))
+            zero_crossing_rate = np.mean(librosa.feature.zero_crossing_rate(y))
             spectral_rolloff = np.mean(librosa.feature.spectral_rolloff(y=y, sr=sr))
 
             features = np.concatenate([
                 mfcc_mean, mfcc_std,
                 mel_mean, mel_std,
-                [spectral_centroid, spectral_bandwidth, spectral_rolloff]
+                [spectral_centroid, spectral_rolloff, zero_crossing_rate]
             ])  # Total: 339 features
 
             return features
