@@ -1,12 +1,16 @@
 """
 Pipeline 1: Music21 transpose harmony.
 Reads Stage 1 intermediate JSON, adds harmony by transposing melody down a major third.
-Outputs MusicXML with melody + harmony.
+Outputs MusicXML with melody + harmony + emotion classification.
 """
 
 import sys
 import json
+import argparse
+import os
 from pathlib import Path
+
+import torch
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -21,8 +25,29 @@ HARMONY_ID = "1"
 HARMONY_METHOD = "music21_transpose"
 
 
-def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
-                model_dir=None):
+def get_device() -> torch.device:
+    """Determine best available device with priority: cuda > mps > cpu"""
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print("Using device: CUDA")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+        print("Using device: MPS (Apple Silicon)")
+        # Enable fallback for ops not supported on MPS
+        os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+    else:
+        device = torch.device("cpu")
+        print("Using device: CPU (no GPU acceleration available)")
+    return device
+
+
+def run_harmony(
+    stage1_pipeline_id: str,
+    stage1_output_dir: str | Path | None = None,
+    output_dir: str | Path | None = None,
+    model_dir: str | Path | None = None,
+    device: str | torch.device | None = None,
+):
     """
     Run harmony generation on all Stage 1 outputs from a given pipeline.
 
@@ -31,6 +56,7 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
         stage1_output_dir: Directory containing Stage 1 output JSONs
         output_dir: Output directory for this combination
         model_dir: Path to emotion model
+        device: Device string or torch.device ('cuda', 'mps', 'cpu')
     """
     combo_id = f"{stage1_pipeline_id}{HARMONY_ID}"
 
@@ -42,6 +68,21 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
     ))
     model_dir = Path(model_dir or MODEL_DIR)
 
+    # Resolve device
+    if isinstance(device, str):
+        if device == "auto":
+            selected_device = get_device()
+        elif device in ["cuda", "mps", "cpu"]:
+            selected_device = torch.device(device)
+            print(f"Using forced device: {selected_device}")
+        else:
+            raise ValueError(f"Unsupported device: {device}")
+    elif isinstance(device, torch.device):
+        selected_device = device
+    else:
+        # default fallback
+        selected_device = get_device()
+
     output_dir.mkdir(parents=True, exist_ok=True)
     musicxml_dir = output_dir / "musicxml"
     wav_dir = output_dir / "wav_after"
@@ -50,7 +91,11 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
     wav_dir.mkdir(exist_ok=True)
     emotion_dir.mkdir(exist_ok=True)
 
-    classifier = EmotionClassifier(str(model_dir))
+    # Initialize emotion classifier with selected device
+    classifier = EmotionClassifier(
+        model_dir=str(model_dir),
+        device=selected_device
+    )
 
     # Find all Stage 1 transcription JSONs
     json_files = sorted(stage1_dir.glob("*_notes.json"))
@@ -58,7 +103,7 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
 
     results = []
     for i, json_path in enumerate(json_files, 1):
-        print(f"\n[{i}/{len(json_files)}] {json_path.name}")
+        # print(f"\n[{i}/{len(json_files)}] {json_path.name}")
 
         try:
             notes, metadata = load_transcription(json_path)
@@ -74,7 +119,7 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
                           for n in notes]
             melody_part = notes_to_music21_part(note_dicts, bpm=bpm, part_id="Melody")
 
-            # Generate harmony
+            # Generate harmony (music21 operations — usually CPU only)
             harmony_part = harmony_transpose(melody_part, interval_str='-M3')
 
             # Create score
@@ -97,7 +142,9 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
             if success and wav_path.exists():
                 emotion_after = classifier.predict(str(wav_path))
                 if emotion_after:
-                    print(f"  Emotion after: {emotion_after['top_emotion']} ({emotion_after['top_confidence']:.1%})")
+                    top_em = emotion_after.get('top_emotion', 'unknown')
+                    top_conf = emotion_after.get('top_confidence', 0.0)
+                    # print(f"  Emotion after: {top_em} ({top_conf:.1%})")
 
             # Save emotion comparison
             emotion_before = metadata.get('emotion_before', {})
@@ -125,7 +172,8 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
 
         except Exception as e:
             print(f"  Error: {e}")
-            import traceback; traceback.print_exc()
+            import traceback
+            traceback.print_exc()
 
     # Save summary
     summary = {
@@ -141,12 +189,19 @@ def run_harmony(stage1_pipeline_id, stage1_output_dir=None, output_dir=None,
     with open(summary_path, 'w') as f:
         json.dump(summary, f, indent=2, default=str)
     print(f"\nSummary saved to {summary_path}")
+
     return results
 
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Run harmony pipeline 1 (transpose -M3)")
     parser.add_argument('--stage1', default='A', help='Stage 1 pipeline ID (A-H)')
+    parser.add_argument('--device', type=str, default='auto',
+                        choices=['auto', 'cuda', 'mps', 'cpu'],
+                        help='Device to use for emotion classification model')
     args = parser.parse_args()
-    run_harmony(args.stage1)
+
+    run_harmony(
+        stage1_pipeline_id=args.stage1,
+        device=args.device
+    )

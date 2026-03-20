@@ -8,17 +8,10 @@ import librosa
 
 
 def detect_pitch_simple_pyin(audio_path, sr=16000, hop_length=512,
-                              fmin=65.4, fmax=2093.0):
+                             fmin=65.4, fmax=2093.0, device=None):
     """
     Simple pYIN pitch detection (librosa.pyin).
-
-    Returns:
-        times: array of frame times
-        f0: array of F0 values (Hz), NaN for unvoiced
-        voiced_flag: boolean array
-        voiced_probs: array of voicing probabilities
-        y: audio signal
-        sr_out: sample rate used
+    Accepts device for API consistency (ignored).
     """
     y, sr_out = librosa.load(audio_path, sr=sr)
     f0, voiced_flag, voiced_probs = librosa.pyin(
@@ -33,23 +26,15 @@ def detect_pitch_simple_pyin(audio_path, sr=16000, hop_length=512,
     return times, f0, voiced_flag, voiced_probs, y, sr_out
 
 
-def detect_pitch_pyin_hmm(audio_path, config=None):
+def detect_pitch_pyin_hmm(audio_path, config=None, device=None):
     """
     pYIN extraction followed by Viterbi HMM smoothing.
-
+    Accepts device for API consistency (ignored - runs on CPU).
+    
     Args:
         audio_path: Path to audio file.
-        config: ExperimentConfig-like object with pyin_fmin, pyin_fmax,
-                pyin_frame_length, pyin_hop_length, median_kernel_size,
-                and Viterbi HMM parameters.
-
-    Returns:
-        times: array of frame times
-        smoothed_midi: array of smoothed MIDI pitch values (0 = unvoiced)
-        f0: raw F0 array
-        voiced_probs: voicing probability array
-        y: audio signal
-        sr: sample rate
+        config: ExperimentConfig-like object ...
+        device: str or torch.device (ignored)
     """
     import scipy.signal
 
@@ -79,14 +64,10 @@ def detect_pitch_pyin_hmm(audio_path, config=None):
     return times, smoothed_midi, f0, voiced_probs, y, sr
 
 
-def detect_pitch_crepe(audio_path, model='full', step_size=10):
+def detect_pitch_crepe(audio_path, model='full', step_size=10, device=None):
     """
     CREPE (TensorFlow) pitch detection.
-
-    Returns:
-        times: array of frame times
-        frequency: array of F0 values (Hz)
-        confidence: array of confidence values
+    Accepts device for API consistency (ignored - TensorFlow version).
     """
     import crepe
 
@@ -101,14 +82,9 @@ def detect_pitch_crepe(audio_path, model='full', step_size=10):
 
 
 def detect_pitch_torchcrepe(audio_path, frame_rate=100, fmin=50.0, fmax=1100.0,
-                             chunk_seconds=10, model='full'):
+                            chunk_seconds=10, model='full', device=None):
     """
     TorchCrepe (PyTorch) pitch detection with chunk-based processing.
-
-    Returns:
-        times: array of frame times
-        f0: array of F0 values (Hz)
-        conf: array of confidence/periodicity values
     """
     import torch
     import torchcrepe
@@ -118,14 +94,16 @@ def detect_pitch_torchcrepe(audio_path, frame_rate=100, fmin=50.0, fmax=1100.0,
     if y.size == 0:
         raise ValueError(f"Empty audio signal for {audio_path}")
 
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-# After
-    if torch.cuda.is_available():
-        device = 'cuda'
-    elif torch.backends.mps.is_available():
-        device = 'mps'
-    else:
-        device = 'cpu'
+    # Resolve device
+    if device is None:
+        if torch.cuda.is_available():
+            device = 'cuda'
+        elif torch.backends.mps.is_available():
+            device = 'mps'
+        else:
+            device = 'cpu'
+    device = torch.device(device)
+
     hop_length = int(sr / frame_rate)
     max_chunk = int(sr * chunk_seconds)
 
@@ -138,8 +116,10 @@ def detect_pitch_torchcrepe(audio_path, frame_rate=100, fmin=50.0, fmax=1100.0,
             continue
 
         try:
+            chunk_tensor = torch.tensor(chunk[None, :], dtype=torch.float32, device=device)
+
             out = torchcrepe.predict(
-                torch.tensor(chunk[None, :], device=device),
+                chunk_tensor,
                 sr,
                 hop_length=hop_length,
                 fmin=fmin,
@@ -154,9 +134,9 @@ def detect_pitch_torchcrepe(audio_path, frame_rate=100, fmin=50.0, fmax=1100.0,
             continue
 
         if isinstance(out, (list, tuple)) and len(out) >= 2:
-            pitch, confidence = out[0], out[1]
+            pitch, confidence = out
         else:
-            pitch = out[0] if isinstance(out, (list, tuple)) else out
+            pitch = out
             confidence = torch.ones_like(pitch)
 
         f0_chunk = np.atleast_1d(pitch.squeeze(0).cpu().numpy())

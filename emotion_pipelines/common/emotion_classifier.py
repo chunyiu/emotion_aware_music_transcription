@@ -9,12 +9,18 @@ import librosa
 import pickle
 from pathlib import Path
 
-
 class EmotionClassifier:
     """RAVDESS-trained emotion classifier with standardized output schema."""
 
-    def __init__(self, model_dir):
+    def __init__(self, model_dir, device='cpu'):
+        """
+        Args:
+            model_dir (str or Path): Directory containing model, scaler, label encoder.
+            device (str): 'cpu' or 'cuda', reserved for future PyTorch support.
+        """
+        self.device = device
         model_dir = Path(model_dir)
+
         with open(model_dir / 'emotion_classifier.pkl', 'rb') as f:
             self.model = pickle.load(f)
         with open(model_dir / 'scaler.pkl', 'rb') as f:
@@ -22,11 +28,18 @@ class EmotionClassifier:
         with open(model_dir / 'label_encoder.pkl', 'rb') as f:
             self.le = pickle.load(f)
 
+        # If PyTorch model, move to device (future-proofing)
+        try:
+            import torch
+            if isinstance(self.model, torch.nn.Module):
+                self.model.to(self.device)
+        except ImportError:
+            pass
+
     def extract_features(self, audio_path, sr=22050, duration=3.0):
         """Extract 339 audio features for emotion classification."""
         try:
             y, _ = librosa.load(audio_path, sr=sr, duration=duration, mono=True)
-
             target_length = int(sr * duration)
             if len(y) < target_length:
                 y = np.pad(y, (0, target_length - len(y)), mode='constant')
