@@ -53,7 +53,7 @@ def download_english_gtsinger(output_dir="data/GTSinger_English", repo_id="GTSin
                 local_dir=str(output_path),
                 local_dir_use_symlinks=False,  # Windows-safe: write real files
                 resume_download=True,           # pick up where we left off
-                max_workers=2,                  # low concurrency avoids 429s
+                max_workers=8,                  # low concurrency avoids 429s
                 token=token,
             )
 

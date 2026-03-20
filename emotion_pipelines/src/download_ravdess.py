@@ -26,7 +26,7 @@ def download_ravdess():
     # Download latest version
     print("\nDownloading dataset...")
     try:
-        path = kagglehub.dataset_download("uwrfkaggler/ravdess-emotional-speech-audio")
+        path = kagglehub.dataset_download("uwrfkaggler/ravdess-emotional-song-audio")
         print(f"✓ Downloaded to: {path}")
     except Exception as e:
         print(f"✗ Download failed: {e}")

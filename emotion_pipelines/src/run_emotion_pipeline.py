@@ -38,7 +38,7 @@ def main():
     print("=" * 60)
     try:
         # Process the sample files in the data folder
-        INPUT_FOLDER = Path(__file__).resolve().parent.parent / "data" / "raw" / "archive"
+        INPUT_FOLDER = Path(__file__).resolve().parent.parent / "data" / "raw" / "archive (1)"
         print(f"Processing audio files from: {INPUT_FOLDER}")
         predict_emotion.main(input_dir=INPUT_FOLDER)
         print("\n✓ Prediction completed successfully")

@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import json
 
 # --- CONFIG ---
-RAVDESS_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "raw" / "archive"
+RAVDESS_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "raw" / "archive (1)"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "results" / "emotion_model"
 SR = 22050
 N_MFCC = 40

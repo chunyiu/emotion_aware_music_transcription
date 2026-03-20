@@ -119,6 +119,13 @@ def detect_pitch_torchcrepe(audio_path, frame_rate=100, fmin=50.0, fmax=1100.0,
         raise ValueError(f"Empty audio signal for {audio_path}")
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# After
+    if torch.cuda.is_available():
+        device = 'cuda'
+    elif torch.backends.mps.is_available():
+        device = 'mps'
+    else:
+        device = 'cpu'
     hop_length = int(sr / frame_rate)
     max_chunk = int(sr * chunk_seconds)
 
