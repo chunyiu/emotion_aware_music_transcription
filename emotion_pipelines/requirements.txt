@@ -22,3 +22,6 @@ transformers
 # Pitch trackers
 crepe
 torchcrepe
+
+# Dataset download
+huggingface_hub
