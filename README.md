@@ -1,4 +1,4 @@
-# Automated Transcription of Vocal Performances to Sheet Music Through Emotion-Aware Deep Learning
+# Tracking Emotional Drift through Multi-Stage Pipeline Analysis of Transcription and Harmonization
 
 This project transcribes singing recordings into sheet music (MusicXML) and evaluates whether the emotional character of the audio is preserved through the transcription and harmonization process. It integrates pitch detection algorithms (pYIN, CREPE, HMM) with deep learning-based emotion classification trained on the RAVDESS dataset.
 
