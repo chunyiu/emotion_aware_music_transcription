@@ -18,29 +18,24 @@ def get_musescore_executable():
     system = platform.system()
 
     if system == "Windows":
-        # Common default install path on Windows
         path = r"C:\Program Files\MuseScore 3\bin\musescore3.exe"
         if Path(path).exists():
             return path
-        # Alternative common path
         alt = r"C:\Program Files (x86)\MuseScore 3\bin\musescore3.exe"
         if Path(alt).exists():
             return alt
 
-    elif system == "Darwin":  # macOS
-        # Standard macOS app bundle path
+    elif system == "Darwin": 
         path = "/Applications/MuseScore 3.app/Contents/MacOS/mscore"
         if Path(path).exists():
             return path
 
-        # Sometimes users install via Homebrew or move it
         brew_path = "/opt/homebrew/bin/mscore"
         if Path(brew_path).exists():
             return brew_path
 
     elif system == "Linux":
-        # Assume it's installed and in PATH
-        return "mscore"  # or "musescore" depending on distro
+        return "mscore"
 
     return None
 
@@ -129,8 +124,6 @@ def musicxml_to_wav_simple(musicxml_path, output_wav_path, sample_rate=22050):
 
             t = np.arange(actual) / sample_rate
             sine_wave = 0.3 * np.sin(2 * np.pi * freq * t)
-
-            # Basic envelope
             attack = min(100, actual // 4)
             decay = min(100, actual // 4)
             envelope = np.ones(actual)
