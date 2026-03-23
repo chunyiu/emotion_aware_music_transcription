@@ -10,7 +10,7 @@ from common.emotion_classifier import EmotionClassifier
 from common.pitch_detectors import detect_pitch_torchcrepe
 from common.note_segmentation import segment_notes_crepe
 from common.note_schema import TranscribedNote, save_transcription
-from common.ground_truth import load_ground_truth_json, compare_notes
+from common.ground_truth import load_ground_truth_json, compare_notes, compute_melody_frame_metrics
 from common.file_discovery import discover_gtsinger_files, make_unique_id
 from config import DATASET_DIR, OUTPUT_DIR, MODEL_DIR
 
@@ -109,7 +109,12 @@ def run_pipeline(
             if gt_path:
                 gt = load_ground_truth_json(gt_path)
                 if gt:
+                    # Note-level metrics
                     gt_metrics = compare_notes(detected_notes, gt)
+                    # Frame-level melody metrics using TorchCrepe F0 track
+                    frame_metrics = compute_melody_frame_metrics(times, f0, gt)
+                    if frame_metrics:
+                        gt_metrics.update(frame_metrics)
                     gt_emotion = gt.get('emotion')
 
             notes = [
@@ -141,6 +146,7 @@ def run_pipeline(
                 'num_notes': len(notes),
                 'emotion_before': emotion_before,
                 'gt_metrics': gt_metrics,
+                'gt_emotion': gt_emotion,
                 'output': str(out_path.relative_to(output_dir)),
             })
 
