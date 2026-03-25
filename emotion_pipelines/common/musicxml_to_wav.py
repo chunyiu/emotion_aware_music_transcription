@@ -172,7 +172,7 @@ def convert_musicxml_to_wav(musicxml_path, output_wav_path, prefer_musescore=Tru
         success = musicxml_to_wav_musescore(musicxml_path, output_wav_path)
 
     if not success:
-        print("[Converter] MuseScore failed or not available → falling back to simple sine-wave method")
+        print("[Converter] MuseScore failed or not available -> falling back to simple sine-wave method")
         success = musicxml_to_wav_simple(musicxml_path, output_wav_path)
 
     return success

@@ -97,7 +97,7 @@ def run_harmony(
         try:
             notes, metadata = load_transcription(json_path)
             if not notes:
-                print("  → No notes found, skipping")
+                print("  -> No notes found, skipping")
                 continue
 
             unique_id = metadata.get('unique_id', json_path.stem)
@@ -121,7 +121,7 @@ def run_harmony(
 
             musicxml_path = musicxml_dir / f"{unique_id}_harmony.musicxml"
             export_musicxml_safely(score, str(musicxml_path))
-            # print(f"  → MusicXML saved: {musicxml_path.name} (Key: {est_key})")
+            # print(f"  -> MusicXML saved: {musicxml_path.name} (Key: {est_key})")
 
             wav_path = wav_dir / f"{unique_id}_harmony.wav"
             success = convert_musicxml_to_wav(musicxml_path, wav_path)
@@ -132,7 +132,7 @@ def run_harmony(
                 if emotion_after:
                     top_emotion = emotion_after.get('top_emotion', 'unknown')
                     top_conf = emotion_after.get('top_confidence', 0.0)
-                    # print(f"  → Emotion after harmony: {top_emotion} ({top_conf:.1%})")
+                    # print(f"  -> Emotion after harmony: {top_emotion} ({top_conf:.1%})")
 
             emotion_before = metadata.get('emotion_before', {})
 
@@ -160,7 +160,7 @@ def run_harmony(
             results.append(result)
 
         except Exception as e:
-            print(f"  → Error processing {json_path.name}: {e}")
+            print(f"  -> Error processing {json_path.name}: {e}")
             import traceback
             traceback.print_exc()
 
@@ -169,7 +169,7 @@ def run_harmony(
         'combo': combo_id,
         'stage1_pipeline': stage1_pipeline_id,
         'harmony_method': HARMONY_METHOD,
-        'total_files': len(json_files),
+        'total': len(json_files),
         'successful': len(results),
         'failed': len(json_files) - len(results),
         'results': results,
@@ -179,7 +179,7 @@ def run_harmony(
     with open(summary_path, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2, default=str)
 
-    print(f"\n[{combo_id}] Summary saved → {summary_path}")
+    print(f"\n[{combo_id}] Summary saved -> {summary_path}")
     print(f"[{combo_id}] Completed: {len(results)} / {len(json_files)} files processed successfully")
 
     return results

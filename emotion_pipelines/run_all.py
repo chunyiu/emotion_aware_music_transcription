@@ -85,7 +85,7 @@ def run_stage1(
 
     pbar = tqdm(pipeline_ids, desc="Stage 1 Pipelines", unit="pipeline", leave=True)
     for pid in pbar:
-        pbar.set_description(f"Stage 1 → Pipeline {pid}")
+        pbar.set_description(f"Stage 1 -> Pipeline {pid}")
 
         module = importlib.import_module(STAGE1_MODULES[pid])
         start_time = time.time()
@@ -129,7 +129,7 @@ def run_stage2(
     pbar = tqdm(combinations, desc="Stage 2 Combinations", unit="combo", leave=True)
     for s1, s2 in pbar:
         combo = f"{s1}{s2}"
-        pbar.set_description(f"Stage 2 → {combo}")
+        pbar.set_description(f"Stage 2 -> {combo}")
 
         module = importlib.import_module(STAGE2_MODULES[s2])
         start_time = time.time()
@@ -185,7 +185,7 @@ def main():
     print("EMOTION-AWARE MUSIC TRANSCRIPTION PIPELINE ORCHESTRATOR")
     print("=" * 70)
     print(f"SELECTED DEVICE: {selected_device}")
-    print(f"  (priority: CUDA → MPS → CPU)")
+    print(f"  (priority: CUDA -> MPS -> CPU)")
 
     if args.stage in ('1', 'all'):
         print(f"\nStage 1 pipelines: {', '.join(s1_ids)}")

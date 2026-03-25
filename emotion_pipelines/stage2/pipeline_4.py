@@ -169,7 +169,7 @@ def run_harmony(
     with open(summary_path, 'w') as f:
         json.dump(summary, f, indent=2, default=str)
 
-    print(f"[{combo_id}] Summary saved → {summary_path}")
+    print(f"[{combo_id}] Summary saved -> {summary_path}")
     return results
 
 

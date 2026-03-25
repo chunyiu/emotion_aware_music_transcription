@@ -1,0 +1,90 @@
+{
+  "pipeline_A": {
+    "label": "PIPELINE A",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 898,
+    "after_rate": 0.301140174379611
+  },
+  "pipeline_B": {
+    "label": "PIPELINE B",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 910,
+    "after_rate": 0.3051643192488263
+  },
+  "pipeline_C": {
+    "label": "PIPELINE C",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1279,
+    "after_rate": 0.4289067739771965
+  },
+  "pipeline_D": {
+    "label": "PIPELINE D",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1296,
+    "after_rate": 0.4346076458752515
+  },
+  "pipeline_E": {
+    "label": "PIPELINE E",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1290,
+    "after_rate": 0.43259557344064387
+  },
+  "pipeline_F": {
+    "label": "PIPELINE F",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1303,
+    "after_rate": 0.4369550637156271
+  },
+  "pipeline_G": {
+    "label": "PIPELINE G",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1265,
+    "after_rate": 0.4242119382964453
+  },
+  "pipeline_H": {
+    "label": "PIPELINE H",
+    "total": 2982,
+    "missing_gt": 0,
+    "csv_fallback": 0,
+    "before_preserved": 476,
+    "before_rate": 0.1596244131455399,
+    "after_available": 2982,
+    "after_preserved": 1281,
+    "after_rate": 0.4295774647887324
+  }
+}

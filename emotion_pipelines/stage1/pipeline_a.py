@@ -77,7 +77,7 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
             # Emotion BEFORE
             emotion_before = classifier.predict(str(wav_path))
             if not emotion_before:
-                print(f"  {wav_path.name} → Emotion classification failed, skipping")
+                print(f"  {wav_path.name} -> Emotion classification failed, skipping")
                 continue
 
             # Pitch detection (no device needed - uses librosa/pyin)

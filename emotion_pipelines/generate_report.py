@@ -66,7 +66,7 @@ def generate_report():
                     s2_data = json.load(f)
 
             s2_results = s2_data.get('results', [])
-            total = s2_data.get('total', 0)
+            total = s2_data.get('total', s2_data.get('total_files', 0))
             successful = s2_data.get('successful', 0)
 
             # Emotion preservation rate

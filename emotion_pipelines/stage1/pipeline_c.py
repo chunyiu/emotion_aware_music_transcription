@@ -83,7 +83,7 @@ def run_pipeline(
             # Emotion classification
             emotion_before = classifier.predict(str(wav_path))
             if not emotion_before:
-                print(f"  {wav_path.name} → Emotion classification failed, skipping")
+                print(f"  {wav_path.name} -> Emotion classification failed, skipping")
                 continue
 
             # Pitch detection with HMM / Viterbi

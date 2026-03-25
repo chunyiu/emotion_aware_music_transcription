@@ -13,7 +13,10 @@ from common.note_segmentation import segment_notes_simple
 from common.note_schema import TranscribedNote, save_transcription
 from common.ground_truth import load_ground_truth_musicxml, compare_notes, compute_melody_frame_metrics
 from common.file_discovery import discover_gtsinger_files, make_unique_id
+from common.csv_emotions import load_csv_emotions, wav_to_csv_key
 from config import DATASET_DIR, OUTPUT_DIR, MODEL_DIR
+
+CSV_PATH = Path(__file__).parent.parent / "gtsinger_english_emotions.csv"
 
 PIPELINE_ID = "B"
 PITCH_METHOD = "simple_pyin"
@@ -38,7 +41,7 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
         os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
 
     print(f"[Pipeline {PIPELINE_ID}] Using device: {device.type.upper()} "
-          f"(priority: CUDA → MPS → CPU)")
+          f"(priority: CUDA -> MPS -> CPU)")
 
     input_dir = Path(input_dir or DATASET_DIR)
     output_dir = Path(output_dir or OUTPUT_DIR) / "stage1_transcription" / f"pipeline_{PIPELINE_ID}"
@@ -48,6 +51,8 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
 
     # Pass device to EmotionClassifier
     classifier = EmotionClassifier(str(model_dir), device=device)
+
+    csv_emotions = load_csv_emotions(CSV_PATH)
 
     files = discover_gtsinger_files(input_dir, max_files=max_files)
     print(f"\n[Pipeline {PIPELINE_ID}] Found {len(files)} audio files")
@@ -74,6 +79,10 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
 
             # Note segmentation
             detected_notes = segment_notes_simple(f0, voiced_flag, times, sr=sr)
+
+            # gt_emotion from CSV (MusicXML has no emotion field)
+            csv_key = wav_to_csv_key(wav_path, input_dir)
+            gt_emotion = csv_emotions.get(csv_key, "")
 
             # Ground truth comparison (MusicXML)
             gt_path = file_info['musicxml']
@@ -109,6 +118,7 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
                 'bpm': 120,
                 'emotion_before': emotion_before,
                 'ground_truth_metrics': gt_metrics,
+                'gt_emotion': gt_emotion,
             }, out_path)
 
             results.append({
@@ -117,6 +127,7 @@ def run_pipeline(input_dir=None, output_dir=None, model_dir=None, max_files=None
                 'num_notes': len(notes),
                 'emotion_before': emotion_before,
                 'gt_metrics': gt_metrics,
+                'gt_emotion': gt_emotion,
                 'output': str(out_path.relative_to(output_dir)),
             })
 

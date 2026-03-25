@@ -14,7 +14,10 @@ from common.note_segmentation import segment_notes_hmm
 from common.note_schema import TranscribedNote, save_transcription
 from common.ground_truth import load_ground_truth_musicxml, compare_notes, compute_melody_frame_metrics
 from common.file_discovery import discover_gtsinger_files, make_unique_id
+from common.csv_emotions import load_csv_emotions, wav_to_csv_key
 from config import DATASET_DIR, OUTPUT_DIR, MODEL_DIR
+
+CSV_PATH = Path(__file__).parent.parent / "gtsinger_english_emotions.csv"
 
 
 PIPELINE_ID = "D"
@@ -77,6 +80,8 @@ def run_pipeline(
     print(f"[Pipeline {PIPELINE_ID}] Loading emotion classifier on {device} ...")
     classifier = EmotionClassifier(str(model_dir), device=device)
 
+    csv_emotions = load_csv_emotions(CSV_PATH)
+
     files = discover_gtsinger_files(input_dir, max_files=max_files)
     print(f"\n[Pipeline {PIPELINE_ID}] Found {len(files)} audio files\n")
 
@@ -98,7 +103,7 @@ def run_pipeline(
             # Emotion prediction
             emotion_before = classifier.predict(str(wav_path))
             if not emotion_before:
-                tqdm.write(f"    → Emotion classification failed for {wav_path.name}, skipping")
+                tqdm.write(f"    -> Emotion classification failed for {wav_path.name}, skipping")
                 continue
 
             # Pitch detection
@@ -108,6 +113,10 @@ def run_pipeline(
             )
 
             detected_notes = segment_notes_hmm(times, smoothed_midi)
+
+            # gt_emotion from CSV (MusicXML has no emotion field)
+            csv_key = wav_to_csv_key(wav_path, input_dir)
+            gt_emotion = csv_emotions.get(csv_key, "")
 
             # Ground truth comparison (if available)
             gt_path = file_info.get('musicxml')
@@ -146,6 +155,7 @@ def run_pipeline(
                     'bpm': 120,
                     'emotion_before': emotion_before,
                     'ground_truth_metrics': gt_metrics,
+                    'gt_emotion': gt_emotion,
                     'device_used': str(device),
                 },
                 output_path=out_path
@@ -157,6 +167,7 @@ def run_pipeline(
                 'num_notes': len(notes),
                 'emotion_before': emotion_before,
                 'gt_metrics': gt_metrics,
+                'gt_emotion': gt_emotion,
                 'output': str(out_path.relative_to(output_dir.parent.parent)),
             })
 

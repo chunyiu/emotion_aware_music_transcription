@@ -105,7 +105,7 @@ def run_harmony(
         try:
             notes, metadata = load_transcription(json_path)
             if not notes:
-                print("  → No notes, skipping")
+                print("  -> No notes, skipping")
                 continue
 
             unique_id = metadata.get('unique_id', json_path.stem)
@@ -129,7 +129,7 @@ def run_harmony(
 
             musicxml_path = musicxml_dir / f"{unique_id}_harmony.musicxml"
             export_musicxml_safely(score, str(musicxml_path))
-            # print(f"  → MusicXML: {musicxml_path.name}")
+            # print(f"  -> MusicXML: {musicxml_path.name}")
 
             wav_path = wav_dir / f"{unique_id}_harmony.wav"
             success = convert_musicxml_to_wav(musicxml_path, wav_path)
@@ -140,7 +140,7 @@ def run_harmony(
                 if emotion_after:
                     top_emo = emotion_after.get('top_emotion', 'unknown')
                     top_conf = emotion_after.get('top_confidence', 0.0)
-                    # print(f"  → Emotion after: {top_emo} ({top_conf:.1%})")
+                    # print(f"  -> Emotion after: {top_emo} ({top_conf:.1%})")
 
             emotion_before = metadata.get('emotion_before', {})
 
@@ -168,7 +168,7 @@ def run_harmony(
             results.append(result)
 
         except Exception as e:
-            print(f"  → Error: {e}")
+            print(f"  -> Error: {e}")
             traceback.print_exc()
 
     # ────────────────────────────────────────────────
@@ -179,7 +179,7 @@ def run_harmony(
         'stage1_pipeline': stage1_pipeline_id,
         'harmony_method': HARMONY_METHOD,
         'device': str(selected_device),
-        'total_files': len(json_files),
+        'total': len(json_files),
         'successful': len(results),
         'failed': len(json_files) - len(results),
         'results': results,
